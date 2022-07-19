@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;LoginTest.java&apos; to &apos;OrangeHrmAutomation/src/orangeHrm&apos;&#x0D;&#x0A;- Original project: &apos;OrangeHrmAutomation&apos;&#x0D;&#x0A;- Destination element: &apos;OrangeHrmAutomation/src/orangeHrm&apos;&#x0D;&#x0A;- Original element: &apos;LoginTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;orangeHrm" element1="/src&lt;{LoginTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1657457374420" units="1" version="1.0"/>
+</session>

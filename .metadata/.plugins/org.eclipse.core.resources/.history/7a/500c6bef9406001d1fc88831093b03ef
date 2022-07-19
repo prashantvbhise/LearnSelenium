@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-18T17:50:22 IST" name="Default suite" finished-at="2022-07-18T17:51:15 IST" duration-ms="53088">
+    <groups>
+    </groups>
+    <test started-at="2022-07-18T17:50:22 IST" name="Default test" finished-at="2022-07-18T17:51:15 IST" duration-ms="53088">
+      <class name="loginScenario.verifyLoginScenario">
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:22 IST" name="beforeEveryTest" finished-at="2022-07-18T17:50:31 IST" duration-ms="9265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="verifyFortgotPassword()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:31 IST" name="verifyFortgotPassword" finished-at="2022-07-18T17:50:32 IST" duration-ms="1088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFortgotPassword -->
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:32 IST" name="afterEveryTest" finished-at="2022-07-18T17:50:33 IST" duration-ms="1122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTest -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:33 IST" name="beforeEveryTest" finished-at="2022-07-18T17:50:41 IST" duration-ms="8281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="verifyLogout()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:41 IST" name="verifyLogout" finished-at="2022-07-18T17:50:49 IST" duration-ms="7967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:49 IST" name="afterEveryTest" finished-at="2022-07-18T17:50:50 IST" duration-ms="992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTest -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:50 IST" name="beforeEveryTest" finished-at="2022-07-18T17:50:58 IST" duration-ms="7533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="verifySuccessfulLogin()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:50:58 IST" name="verifySuccessfulLogin" finished-at="2022-07-18T17:51:03 IST" duration-ms="4932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogin -->
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:51:03 IST" name="afterEveryTest" finished-at="2022-07-18T17:51:04 IST" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTest -->
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:51:04 IST" name="beforeEveryTest" finished-at="2022-07-18T17:51:12 IST" duration-ms="7734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="verifyWrongUsernameAndPassword()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:51:12 IST" name="verifyWrongUsernameAndPassword" finished-at="2022-07-18T17:51:14 IST" duration-ms="2270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWrongUsernameAndPassword -->
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:loginScenario.verifyLoginScenario@55634720]" started-at="2022-07-18T17:51:14 IST" name="afterEveryTest" finished-at="2022-07-18T17:51:15 IST" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTest -->
+      </class> <!-- loginScenario.verifyLoginScenario -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

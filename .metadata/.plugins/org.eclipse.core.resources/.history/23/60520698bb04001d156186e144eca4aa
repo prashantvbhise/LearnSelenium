@@ -1,0 +1,13 @@
+package orangeHrm;
+
+public class Controller {
+
+	public static void main(String[] args) {
+		
+		Login browser = new Login();
+		
+		browser.login();
+
+	}
+
+}

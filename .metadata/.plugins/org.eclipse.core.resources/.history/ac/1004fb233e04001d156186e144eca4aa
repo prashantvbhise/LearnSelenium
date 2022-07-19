@@ -1,0 +1,12 @@
+package orangeHrm;
+
+public class Login {
+	
+	public void login() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		ChromeDriver driver= new ChromeDriver();
+		
+	}
+
+}

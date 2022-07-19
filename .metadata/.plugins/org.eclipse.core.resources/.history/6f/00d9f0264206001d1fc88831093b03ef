@@ -1,0 +1,126 @@
+package paraBankApplication;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class TransferFundsScenarios extends CommonMethod {
+
+	//@Test
+	public void defaultAccountsTransferFunds() throws InterruptedException {
+
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+		driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+		driver.findElement(By.xpath("//a[text()='Transfer Funds']")).click();
+
+		Thread.sleep(1000);
+
+		driver.findElement(By.id("amount")).sendKeys("100");
+
+		driver.findElement(By.xpath("//input[@value='Transfer']")).click();
+
+		Thread.sleep(1000);
+
+		boolean successMessage = driver.findElement(By.xpath("//h1[text()='Transfer Complete!']")).isDisplayed();
+
+		if (successMessage == true) {
+
+			String ammount = driver.findElement(By.id("amount")).getText();
+
+			String message = driver.findElement(By.xpath("//*[text()=' has been transferred from account #']"))
+					.getText();
+
+			System.out.println(message);
+
+			String fromAccountId = driver.findElement(By.id("fromAccountId")).getText();
+
+			String toAccountId = driver.findElement(By.id("toAccountId")).getText();
+
+			System.out.println(ammount + " has been transferred from account " + "From account " + fromAccountId
+					+ " TO account " + toAccountId);
+
+		}
+
+	}
+
+	@Test
+	public void intraTransferFund() throws InterruptedException {
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+		driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+		driver.findElement(By.xpath("//a[text()='Transfer Funds']")).click();
+
+		Thread.sleep(1000);
+
+		driver.findElement(By.id("amount")).sendKeys("100");
+
+		Select fromAccount = new Select(driver.findElement(By.id("fromAccountId")));
+
+		fromAccount.selectByValue("13344");
+
+		Select toAccount = new Select(driver.findElement(By.id("toAccountId")));
+
+		toAccount.selectByVisibleText("13233");
+
+		driver.findElement(By.xpath("//input[@value='Transfer']")).click();
+
+		Thread.sleep(1000);
+
+		boolean successMessage = driver.findElement(By.xpath("//h1[text()='Transfer Complete!']")).isDisplayed();
+
+		if (successMessage == true) {
+
+			String ammount = driver.findElement(By.id("amount")).getText();
+
+			String message = driver.findElement(By.xpath("//*[text()=' has been transferred from account #']"))
+					.getText();
+
+			System.out.println(message);
+
+			String fromAccountId = driver.findElement(By.id("fromAccountId")).getText();
+
+			String toAccountId = driver.findElement(By.id("toAccountId")).getText();
+
+			System.out.println(ammount + " has been transferred from account " + "From account " + fromAccountId
+					+ " TO account " + toAccountId);
+
+		}
+
+	}
+
+	//@Test
+	public void emptyAmountTransfer() throws InterruptedException {
+
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+		driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+		driver.findElement(By.xpath("//a[text()='Transfer Funds']")).click();
+
+		Thread.sleep(1000);
+
+		driver.findElement(By.xpath("//input[@value='Transfer']")).click();
+
+		Thread.sleep(1000);
+
+		boolean errorMessage = driver.findElement(By.id("amount.errors")).isDisplayed();
+
+		if (errorMessage == true) {
+
+			String actualErrorMessage = driver.findElement(By.id("amount.errors")).getText();
+
+			System.out.println(actualErrorMessage);
+		}
+
+	}
+}

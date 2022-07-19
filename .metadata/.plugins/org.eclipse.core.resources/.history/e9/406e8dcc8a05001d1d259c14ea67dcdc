@@ -1,0 +1,150 @@
+package paraBankApplication;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class SearchTransactionScenarios {
+	
+	 @Test
+		public void findTransactionById() throws InterruptedException {
+
+			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+			ChromeDriver driver = new ChromeDriver();
+			
+			driver.manage().window().maximize();
+
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+
+			driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+			driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+			driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+			driver.findElement(By.xpath("//a[text()='Find Transactions']")).click();
+
+			Select accountSelection = new Select(driver.findElement(By.id("accountId")));
+
+			accountSelection.selectByVisibleText("13788");
+
+			driver.findElement(By.id("criteria.transactionId")).sendKeys("14476");
+
+			driver.findElement(By.xpath("//button[contains(@ng-click,'ID')]")).click();
+
+			Thread.sleep(1000);
+
+			System.out.println(driver.findElement(By.xpath("//h1[text()='Transaction Results']")).isDisplayed());
+
+			driver.quit();
+		}
+
+		@Test
+		public void findTransactionByDate() throws InterruptedException {
+
+			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+			ChromeDriver driver = new ChromeDriver();
+			
+			driver.manage().window().maximize();
+
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+			
+			driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+			driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+			driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+			driver.findElement(By.xpath("//a[text()='Find Transactions']")).click();
+
+			Select accountSelection = new Select(driver.findElement(By.id("accountId")));
+
+			accountSelection.selectByVisibleText("13788");
+
+			driver.findElement(By.id("criteria.onDate")).sendKeys("07-16-2022");
+
+			driver.findElement(By.xpath("//button[contains(@ng-click,'DATE')]")).click();
+
+			Thread.sleep(1000);
+
+			System.out.println(driver.findElement(By.xpath("//h1[text()='Transaction Results']")).isDisplayed());
+
+			driver.quit();
+
+		}
+
+		@Test
+		public void findTransactionByDateRange() throws InterruptedException {
+
+			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+			ChromeDriver driver = new ChromeDriver();
+			
+			driver.manage().window().maximize();
+
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+
+			driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+			driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+			driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+			driver.findElement(By.xpath("//a[text()='Find Transactions']")).click();
+
+			Select accountSelection = new Select(driver.findElement(By.id("accountId")));
+
+			accountSelection.selectByVisibleText("13788");
+
+			driver.findElement(By.id("criteria.fromDate")).sendKeys("07-16-2022");
+
+			driver.findElement(By.id("criteria.toDate")).sendKeys("07-16-2022");
+
+			driver.findElement(By.xpath("//button[contains(@ng-click,'DATE_RANGE')]")).click();
+
+			Thread.sleep(1000);
+
+			System.out.println(driver.findElement(By.xpath("//h1[text()='Transaction Results']")).isDisplayed());
+
+			driver.quit();
+
+		}
+
+		@Test
+		public void findTransactionByAmount() throws InterruptedException {
+
+			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+			ChromeDriver driver = new ChromeDriver();
+			
+			driver.manage().window().maximize();
+
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+
+			driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john");
+
+			driver.findElement(By.xpath("//input[@name='password']")).sendKeys("demo");
+
+			driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
+			driver.findElement(By.xpath("//a[text()='Find Transactions']")).click();
+
+			Select accountSelection = new Select(driver.findElement(By.id("accountId")));
+
+			accountSelection.selectByVisibleText("13788");
+
+			driver.findElement(By.id("criteria.amount")).sendKeys("100");
+			
+			driver.findElement(By.xpath("//button[contains(@ng-click,'AMOUNT')]")).click();
+
+			Thread.sleep(1000);
+
+			System.out.println(driver.findElement(By.xpath("//h1[text()='Transaction Results']")).isDisplayed());
+
+			driver.quit();
+		}
+
+}

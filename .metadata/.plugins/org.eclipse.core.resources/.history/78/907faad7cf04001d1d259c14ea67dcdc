@@ -1,0 +1,33 @@
+package loginScenario;
+
+public class verifyLoginScenario {
+
+	public void verifySuccessfulLogin() 
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver():
+			
+
+	}
+
+	public void verifyEmptyCrdential() 
+	{
+
+	}
+
+	public void verifyWrongUserId()
+	{
+
+	}
+
+	public void verifyWrongPassword() 
+	{
+
+	}	
+
+	public void verifyWrongCredential() 
+	{
+
+	}
+
+}
