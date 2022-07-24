@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T22:58:47 IST" name="Default suite" finished-at="2022-07-18T22:59:33 IST" duration-ms="46441">
+  <suite started-at="2022-07-20T10:37:53 IST" name="Default suite" finished-at="2022-07-20T10:38:35 IST" duration-ms="41721">
     <groups>
     </groups>
-    <test started-at="2022-07-18T22:58:47 IST" name="Default test" finished-at="2022-07-18T22:59:33 IST" duration-ms="46441">
+    <test started-at="2022-07-20T10:37:53 IST" name="Default test" finished-at="2022-07-20T10:38:35 IST" duration-ms="41721">
       <class name="paraBankApplication.TransferFundsScenarios">
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:58:47 IST" name="beforeEveryTest" finished-at="2022-07-18T22:59:00 IST" duration-ms="12967" status="PASS">
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:37:54 IST" name="beforeEveryTest" finished-at="2022-07-20T10:38:04 IST" duration-ms="10733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEveryTest -->
-        <test-method signature="defaultAccountsTransferFunds()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:00 IST" name="defaultAccountsTransferFunds" finished-at="2022-07-18T22:59:04 IST" duration-ms="3971" status="PASS">
+        <test-method signature="defaultAccountsTransferFunds()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:04 IST" name="defaultAccountsTransferFunds" finished-at="2022-07-20T10:38:08 IST" duration-ms="3979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- defaultAccountsTransferFunds -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:04 IST" name="afterEveryTest" finished-at="2022-07-18T22:59:06 IST" duration-ms="1956" status="PASS">
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:08 IST" name="afterEveryTest" finished-at="2022-07-20T10:38:09 IST" duration-ms="949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryTest -->
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:06 IST" name="beforeEveryTest" finished-at="2022-07-18T22:59:16 IST" duration-ms="9818" status="PASS">
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:09 IST" name="beforeEveryTest" finished-at="2022-07-20T10:38:18 IST" duration-ms="9238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEveryTest -->
-        <test-method signature="emptyAmountTransfer()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:16 IST" name="emptyAmountTransfer" finished-at="2022-07-18T22:59:20 IST" duration-ms="4076" status="PASS">
+        <test-method signature="emptyAmountTransfer()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:18 IST" name="emptyAmountTransfer" finished-at="2022-07-20T10:38:22 IST" duration-ms="3924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyAmountTransfer -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:20 IST" name="afterEveryTest" finished-at="2022-07-18T22:59:21 IST" duration-ms="1035" status="PASS">
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:22 IST" name="afterEveryTest" finished-at="2022-07-20T10:38:23 IST" duration-ms="974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryTest -->
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:21 IST" name="beforeEveryTest" finished-at="2022-07-18T22:59:28 IST" duration-ms="7390" status="PASS">
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:23 IST" name="beforeEveryTest" finished-at="2022-07-20T10:38:30 IST" duration-ms="6679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEveryTest -->
-        <test-method signature="intraTransferFund()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:28 IST" name="intraTransferFund" finished-at="2022-07-18T22:59:32 IST" duration-ms="4076" status="PASS">
+        <test-method signature="intraTransferFund()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:30 IST" name="intraTransferFund" finished-at="2022-07-20T10:38:34 IST" duration-ms="4159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intraTransferFund -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-18T22:59:32 IST" name="afterEveryTest" finished-at="2022-07-18T22:59:33 IST" duration-ms="1045" status="PASS">
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:paraBankApplication.TransferFundsScenarios@55634720]" started-at="2022-07-20T10:38:34 IST" name="afterEveryTest" finished-at="2022-07-20T10:38:35 IST" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryTest -->

@@ -20,7 +20,9 @@ public class SearchTransactionScenarios extends CommonMethod {
 
 		Select accountSelection = new Select(driver.findElement(By.id("accountId")));
 
-		accountSelection.selectByVisibleText("13677");
+		//accountSelection.selectByVisibleText("13677");
+		
+		accountSelection.selectByIndex(0);
 
 		driver.findElement(By.id("criteria.transactionId")).sendKeys("14476");
 
@@ -49,7 +51,9 @@ public class SearchTransactionScenarios extends CommonMethod {
 
 		Select accountSelection = new Select(driver.findElement(By.id("accountId")));
 
-		accountSelection.selectByVisibleText("13677");
+		//accountSelection.selectByVisibleText("13677");
+		
+		accountSelection.selectByIndex(0);
 
 		driver.findElement(By.id("criteria.onDate")).sendKeys("07-17-2022");
 
@@ -76,7 +80,9 @@ public class SearchTransactionScenarios extends CommonMethod {
 
 		Select accountSelection = new Select(driver.findElement(By.id("accountId")));
 
-		accountSelection.selectByVisibleText("13677");
+		//accountSelection.selectByVisibleText("13677");
+		
+		accountSelection.selectByIndex(0);
 
 		driver.findElement(By.id("criteria.fromDate")).sendKeys("07-16-2022");
 
@@ -103,7 +109,9 @@ public class SearchTransactionScenarios extends CommonMethod {
 
 		Select accountSelection = new Select(driver.findElement(By.id("accountId")));
 
-		accountSelection.selectByVisibleText("13677");
+		//accountSelection.selectByVisibleText("13677");
+		
+		accountSelection.selectByIndex(0);
 
 		driver.findElement(By.id("criteria.amount")).sendKeys("100");
 

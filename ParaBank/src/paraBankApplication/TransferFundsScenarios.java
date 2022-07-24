@@ -68,11 +68,15 @@ public class TransferFundsScenarios extends CommonMethod {
 
 		Select fromAccount = new Select(driver.findElement(By.id("fromAccountId")));
 
-		fromAccount.selectByValue("13677");
+		//fromAccount.selectByValue("13677");
+		
+		fromAccount.selectByIndex(0);
 
 		Select toAccount = new Select(driver.findElement(By.id("toAccountId")));
 
-		toAccount.selectByVisibleText("14787");
+		//toAccount.selectByVisibleText("14787");
+		
+		toAccount.selectByIndex(1);
 
 		driver.findElement(By.xpath("//input[@value='Transfer']")).click();
 
