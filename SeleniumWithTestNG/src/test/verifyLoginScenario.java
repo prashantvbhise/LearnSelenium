@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import commonPackage.BaseSelenium;
 
-public class verifyLoginScenario extends BaseSelenium {
+public class VerifyLoginScenario extends BaseSelenium {
 
 	@Test
 	public void verifySuccessfulLogin() {
