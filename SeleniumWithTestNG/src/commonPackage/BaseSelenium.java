@@ -6,10 +6,10 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseSelenium {
 	
-	public ChromeDriver driver;
+	protected ChromeDriver driver;
 	
 	@BeforeMethod
-	public void beforeEveryTest() throws InterruptedException {
+	protected void beforeEveryTest() throws InterruptedException {
 		
 		System.out.println("beforeEveryTest run started");
 		
@@ -28,7 +28,7 @@ public class BaseSelenium {
 	}
 	
 	@AfterMethod
-	public void afterEveryTest() {
+	protected void afterEveryTest() {
 		
 		driver.quit();
 		

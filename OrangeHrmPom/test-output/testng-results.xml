@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-25T11:11:11 IST" name="Default suite" finished-at="2022-07-25T11:11:29 IST" duration-ms="17850">
+    <groups>
+    </groups>
+    <test started-at="2022-07-25T11:11:11 IST" name="Default test" finished-at="2022-07-25T11:11:29 IST" duration-ms="17850">
+      <class name="testPackage.AddUserTest">
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:testPackage.AddUserTest@47d9a273]" started-at="2022-07-25T11:11:11 IST" name="beforeEveryTest" finished-at="2022-07-25T11:11:20 IST" duration-ms="9653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method signature="verifyAddingAdminUser()[pri:0, instance:testPackage.AddUserTest@47d9a273]" started-at="2022-07-25T11:11:20 IST" name="verifyAddingAdminUser" finished-at="2022-07-25T11:11:29 IST" duration-ms="8116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingAdminUser -->
+      </class> <!-- testPackage.AddUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
