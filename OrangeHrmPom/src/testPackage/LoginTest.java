@@ -21,5 +21,12 @@ public class LoginTest extends BaseSelenium{
 		HomePage hp = new HomePage();
 		hp.verifyWelcomeMessage("Welcome Chidambaram");
 	}
+	@Test
+	public void verifyWrongUsername() {
+		
+		LoginPage lp = new LoginPage();
+		lp.login("admi", "admin123");
+		lp.verifyErrorMessage("Invalid credentials");
+	}
 
 }
