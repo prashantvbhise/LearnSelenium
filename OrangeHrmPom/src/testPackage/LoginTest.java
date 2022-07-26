@@ -28,5 +28,12 @@ public class LoginTest extends BaseSelenium{
 		lp.login("admi", "admin123");
 		lp.verifyErrorMessage("Invalid credentials");
 	}
+	@Test
+	public void verifyWrongPassword() {
+		
+		LoginPage lp = new LoginPage();
+		lp.login("admin", "admin1234");
+		lp.verifyErrorMessage("Invalid credentials");
+	}
 
 }
