@@ -7,18 +7,9 @@
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-    <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="pages.LoginPage"/>
     <fullyQualifiedTypeName name="pages.HomePage"/>
     <fullyQualifiedTypeName name="pages.AddCandidate"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-    <fullyQualifiedTypeName name="commonPackage.WebDriverFactory"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
     <fullyQualifiedTypeName name="pageObjectPackage.AdminPage"/>
     <fullyQualifiedTypeName name="pageObjectPackage.HomePage"/>
@@ -26,4 +17,18 @@
     <fullyQualifiedTypeName name="pageObjectPackage.LoginPage"/>
     <fullyQualifiedTypeName name="commonPackage.BaseSelenium"/>
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+    <fullyQualifiedTypeName name="pageObject.FindTransaction"/>
+    <fullyQualifiedTypeName name="pageObject.TransactionDetails"/>
+    <fullyQualifiedTypeName name="commonPackage.WebDriverFactory"/>
+    <fullyQualifiedTypeName name="commonPackage.BaseClass"/>
+    <fullyQualifiedTypeName name="pageObject.LoginPage"/>
+    <fullyQualifiedTypeName name="pageObject.HomePage"/>
 </qualifiedTypeNameHistroy>

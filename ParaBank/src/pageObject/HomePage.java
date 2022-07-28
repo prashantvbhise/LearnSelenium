@@ -13,9 +13,10 @@ public class HomePage {
 	private WebElement successfulLogon;
 	
 	@FindBy(xpath="//a[text()='Find Transactions']")
-	private WebElement navigationLink;
+	private WebElement findTransactionsLink;
 	
-	
+	@FindBy(xpath="//a[text()='Transfer Funds']")
+	private WebElement transferLink;
 	
 	
 	public HomePage() {
@@ -31,7 +32,13 @@ public class HomePage {
 	
 	public void clickOnFindTransction() {
 		
-		navigationLink.click();
+		findTransactionsLink.click();
+	}
+	
+	public void clickOnTransferLink() throws InterruptedException {
+		
+		transferLink.click();
+		Thread.sleep(2000);
 	}
 
 }

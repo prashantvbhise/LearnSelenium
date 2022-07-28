@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T01:01:38 IST" name="Default suite" finished-at="2022-07-27T01:02:28 IST" duration-ms="50063">
+  <suite started-at="2022-07-28T22:09:33 IST" name="Default suite" finished-at="2022-07-28T22:09:54 IST" duration-ms="20668">
     <groups>
     </groups>
-    <test started-at="2022-07-27T01:01:38 IST" name="Default test" finished-at="2022-07-27T01:02:28 IST" duration-ms="50063">
-      <class name="testPackage.SearchTransactionScenarios">
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:01:38 IST" name="beforeEveryTest" finished-at="2022-07-27T01:01:48 IST" duration-ms="10504" status="PASS">
+    <test started-at="2022-07-28T22:09:33 IST" name="Default test" finished-at="2022-07-28T22:09:54 IST" duration-ms="20668">
+      <class name="testPackage.TransferFundsScenarios">
+        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:testPackage.TransferFundsScenarios@55634720]" started-at="2022-07-28T22:09:33 IST" name="beforeEveryTest" finished-at="2022-07-28T22:09:42 IST" duration-ms="8365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEveryTest -->
-        <test-method signature="findTransactionByAmount()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:01:48 IST" name="findTransactionByAmount" finished-at="2022-07-27T01:01:52 IST" duration-ms="3844" status="PASS">
+        <test-method signature="emptyAmountTransfer()[pri:0, instance:testPackage.TransferFundsScenarios@55634720]" started-at="2022-07-28T22:09:42 IST" name="emptyAmountTransfer" finished-at="2022-07-28T22:09:53 IST" duration-ms="11214" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findTransactionByAmount -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:01:52 IST" name="afterEveryTest" finished-at="2022-07-27T01:01:53 IST" duration-ms="898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryTest -->
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:01:53 IST" name="beforeEveryTest" finished-at="2022-07-27T01:02:00 IST" duration-ms="7184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryTest -->
-        <test-method signature="findTransactionByDate()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:00 IST" name="findTransactionByDate" finished-at="2022-07-27T01:02:04 IST" duration-ms="3730" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findTransactionByDate -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:04 IST" name="afterEveryTest" finished-at="2022-07-27T01:02:05 IST" duration-ms="865" status="PASS">
+        </test-method> <!-- emptyAmountTransfer -->
+        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:testPackage.TransferFundsScenarios@55634720]" started-at="2022-07-28T22:09:53 IST" name="afterEveryTest" finished-at="2022-07-28T22:09:54 IST" duration-ms="1008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryTest -->
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:05 IST" name="beforeEveryTest" finished-at="2022-07-27T01:02:12 IST" duration-ms="7158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryTest -->
-        <test-method signature="findTransactionByDateRange()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:12 IST" name="findTransactionByDateRange" finished-at="2022-07-27T01:02:16 IST" duration-ms="4058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findTransactionByDateRange -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:16 IST" name="afterEveryTest" finished-at="2022-07-27T01:02:17 IST" duration-ms="857" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryTest -->
-        <test-method is-config="true" signature="beforeEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:17 IST" name="beforeEveryTest" finished-at="2022-07-27T01:02:24 IST" duration-ms="6771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryTest -->
-        <test-method signature="findTransactionById()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:24 IST" name="findTransactionById" finished-at="2022-07-27T01:02:27 IST" duration-ms="3205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findTransactionById -->
-        <test-method is-config="true" signature="afterEveryTest()[pri:0, instance:testPackage.SearchTransactionScenarios@4b0d79fc]" started-at="2022-07-27T01:02:27 IST" name="afterEveryTest" finished-at="2022-07-27T01:02:28 IST" duration-ms="870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryTest -->
-      </class> <!-- testPackage.SearchTransactionScenarios -->
+      </class> <!-- testPackage.TransferFundsScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

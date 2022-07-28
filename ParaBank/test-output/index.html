@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Pooja\AppData\Local\Temp\testng-eclipse--1968789970\testng-customsuite.xml</span>
+                    <span>C:\Users\Pooja\AppData\Local\Temp\testng-eclipse-922751136\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testPackage.TransferFundsScenarios" class="method navigator-link" hash-for-method="emptyAmountTransfer">emptyAmountTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testPackage.TransferFundsScenarios" class="method navigator-link" hash-for-method="intraTransferFund">intraTransferFund</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +122,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testPackage.SearchTransactionScenarios" class="method navigator-link" hash-for-method="findTransactionByAmount">findTransactionByAmount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testPackage.SearchTransactionScenarios" class="method navigator-link" hash-for-method="findTransactionByDate">findTransactionByDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testPackage.SearchTransactionScenarios" class="method navigator-link" hash-for-method="findTransactionByDateRange">findTransactionByDateRange</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testPackage.SearchTransactionScenarios" class="method navigator-link" hash-for-method="findTransactionById">findTransactionById</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testPackage.TransferFundsScenarios" class="method navigator-link" hash-for-method="defaultAccountsTransferFunds">defaultAccountsTransferFunds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,38 +137,117 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testPackage.SearchTransactionScenarios</span>
+              <img src="failed.png"/>
+              <span class="class-name">testPackage.TransferFundsScenarios</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="findTransactionByAmount">
-                  </a> <!-- findTransactionByAmount -->
-                  <span class="method-name">findTransactionByAmount</span>
+                  <a name="emptyAmountTransfer">
+                  </a> <!-- emptyAmountTransfer -->
+                  <span class="method-name">emptyAmountTransfer</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;PRASHANT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:301)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:176)
+	at pageObject.TransferPage.selectAccountsForTransfer(TransferPage.java:55)
+	at testPackage.TransferFundsScenarios.emptyAmountTransfer(TransferFundsScenarios.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="findTransactionByDate">
-                  </a> <!-- findTransactionByDate -->
-                  <span class="method-name">findTransactionByDate</span>
+                  <a name="intraTransferFund">
+                  </a> <!-- intraTransferFund -->
+                  <span class="method-name">intraTransferFund</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;PRASHANT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:301)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:176)
+	at pageObject.TransferPage.selectAccountsForTransfer(TransferPage.java:55)
+	at testPackage.TransferFundsScenarios.intraTransferFund(TransferFundsScenarios.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPackage.TransferFundsScenarios</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="findTransactionByDateRange">
-                  </a> <!-- findTransactionByDateRange -->
-                  <span class="method-name">findTransactionByDateRange</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="findTransactionById">
-                  </a> <!-- findTransactionById -->
-                  <span class="method-name">findTransactionById</span>
+                  <a name="defaultAccountsTransferFunds">
+                  </a> <!-- defaultAccountsTransferFunds -->
+                  <span class="method-name">defaultAccountsTransferFunds</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +255,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Pooja\AppData\Local\Temp\testng-eclipse--1968789970\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Pooja\AppData\Local\Temp\testng-eclipse-922751136\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +264,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testPackage.SearchTransactionScenarios&quot;/&gt;
+      &lt;class name=&quot;testPackage.TransferFundsScenarios&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,28 +304,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'findTransactionByDateRange')
-data.setCell(0, 2, 'testPackage.SearchTransactionScenarios')
-data.setCell(0, 3, 4058);
+data.setCell(0, 1, 'defaultAccountsTransferFunds')
+data.setCell(0, 2, 'testPackage.TransferFundsScenarios')
+data.setCell(0, 3, 8529);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'findTransactionByAmount')
-data.setCell(1, 2, 'testPackage.SearchTransactionScenarios')
-data.setCell(1, 3, 3844);
+data.setCell(1, 1, 'emptyAmountTransfer')
+data.setCell(1, 2, 'testPackage.TransferFundsScenarios')
+data.setCell(1, 3, 7228);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'findTransactionByDate')
-data.setCell(2, 2, 'testPackage.SearchTransactionScenarios')
-data.setCell(2, 3, 3730);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'findTransactionById')
-data.setCell(3, 2, 'testPackage.SearchTransactionScenarios')
-data.setCell(3, 3, 3205);
+data.setCell(2, 1, 'intraTransferFund')
+data.setCell(2, 2, 'testPackage.TransferFundsScenarios')
+data.setCell(2, 3, 7155);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -268,54 +347,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testPackage.SearchTransactionScenarios</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testPackage.TransferFundsScenarios</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEveryTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">findTransactionByAmount</span>
-                <span class="method-start">10507 ms</span>
+                <span class="method-name">defaultAccountsTransferFunds</span>
+                <span class="method-start">7728 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryTest</span>
-                <span class="method-start">14355 ms</span>
+                <span class="method-start">16264 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEveryTest</span>
-                <span class="method-start">15256 ms</span>
+                <span class="method-start">17241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">findTransactionByDate</span>
-                <span class="method-start">22440 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emptyAmountTransfer</span>
+                <span class="method-start">24127 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryTest</span>
-                <span class="method-start">26173 ms</span>
+                <span class="method-start">31364 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEveryTest</span>
-                <span class="method-start">27043 ms</span>
+                <span class="method-start">32348 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">findTransactionByDateRange</span>
-                <span class="method-start">34201 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">intraTransferFund</span>
+                <span class="method-start">39413 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryTest</span>
-                <span class="method-start">38262 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeEveryTest</span>
-                <span class="method-start">39122 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">findTransactionById</span>
-                <span class="method-start">45893 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEveryTest</span>
-                <span class="method-start">49099 ms</span>
+                <span class="method-start">46571 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
