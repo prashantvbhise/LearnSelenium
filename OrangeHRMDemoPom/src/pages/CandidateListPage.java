@@ -1,25 +1,25 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import commonPackage.WebDriverFactory;
+import common.WebDriverFactory;
 
-public class CandidateList {
+public class CandidateListPage {
 
 	@FindBy(id = "btnAdd")
 	private WebElement addCandidateButton;
 
-	public CandidateList() {
+	public CandidateListPage() {
 
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}
 
-	public AddCandidate clickonAddCandidateButton() {
+	public AddCandidatePage clickonAddCandidateButton() {
 
 		addCandidateButton.click();
-		AddCandidate ac = new AddCandidate();
+		AddCandidatePage ac = new AddCandidatePage();
 		return ac;
 	}
 }

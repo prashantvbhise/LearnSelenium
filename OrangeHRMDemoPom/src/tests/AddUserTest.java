@@ -1,13 +1,13 @@
-package testPackage;
+package tests;
 
 import org.testng.annotations.Test;
 
-import commonPackage.BaseSelenium;
-import pageObjects.LoginPage;
+import common.BaseSelenium;
+import pages.LoginPage;
 
-public class VerifyAddingUserScenarios extends BaseSelenium {
+public class AddUserTest extends BaseSelenium {
 
-	@Test
+	@Test (groups = {"Sanity", "Regression"})
 	public void verifyAdduserEss() {
 
 		LoginPage lp = new LoginPage();
@@ -16,7 +16,7 @@ public class VerifyAddingUserScenarios extends BaseSelenium {
 				"Nina Patel", "Ninapatel123", "Enabled", "Ninapatel123", "Ninapatel123");
 	}
 
-	@Test
+	//@Test (groups = {"Sanity"})
 	public void verifyAdduserAdmin() {
 
 		LoginPage lp = new LoginPage();

@@ -1,4 +1,4 @@
-package commonPackage;
+package common;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseSelenium {
 
-	@BeforeMethod
+	@BeforeMethod (groups = {"Sanity", "Regression"})
 	public void beforeEveryMethod() {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
@@ -18,7 +18,7 @@ public class BaseSelenium {
 		WebDriverFactory.getDriver().get("https://opensource-demo.orangehrmlive.com/");
 	}
 
-	@AfterMethod
+	//@AfterMethod (groups ={"Sanity", "Regression"})
 	public void afterEveryMethod() {
 
 		WebDriverFactory.getDriver().quit();

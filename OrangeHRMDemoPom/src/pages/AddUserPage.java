@@ -1,13 +1,13 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import commonPackage.WebDriverFactory;
+import common.WebDriverFactory;
 
-public class AddUser {
+public class AddUserPage {
 
 	@FindBy(id = "systemUser_userType")
 	private WebElement userTypeDropdown;
@@ -24,7 +24,7 @@ public class AddUser {
 	@FindBy(xpath = "//input[@type='button' and @value='Save']")
 	private WebElement saveButton;
 
-	public AddUser() {
+	public AddUserPage() {
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}
 

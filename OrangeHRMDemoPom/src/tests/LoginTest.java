@@ -1,19 +1,19 @@
-package testPackage;
+package tests;
 
 import org.testng.annotations.Test;
 
-import commonPackage.BaseSelenium;
-import pageObjects.LoginPage;
+import common.BaseSelenium;
+import pages.LoginPage;
 
-public class VerifyLoginScenarios extends BaseSelenium {
-	@Test
+public class LoginTest extends BaseSelenium {
+	@Test (groups = {"Sanity", "Regression"})
 	public void verifysuccessfulLogin() {
 
 		LoginPage lp = new LoginPage();
 		lp.successfulLogin("admin", "admin123").verifyWelcomeMsg();
 
 	}
-	@Test
+	@Test (groups = {"Sanity"})
 	public void verifyUnscussefulLogin() {
 		LoginPage lp = new LoginPage();
 		lp.emptyCredential().verifyErrorMsg()
@@ -21,7 +21,7 @@ public class VerifyLoginScenarios extends BaseSelenium {
 		.unsuccessfulLogin().verifyErrorMsg();
 
 	}
-	@Test
+	@Test(groups = {"Sanity"})
 	public void verifyPasswordResetting() {
 
 		LoginPage lp= new LoginPage();
@@ -29,7 +29,7 @@ public class VerifyLoginScenarios extends BaseSelenium {
 		lp.clickForgotPasswordLink().verifyResetPassword("Anolan");
 	}
 
-	@Test
+	@Test (groups = {"Sanity"})
 	public void verifyCancelResetting() {
 
 		LoginPage lp= new LoginPage();

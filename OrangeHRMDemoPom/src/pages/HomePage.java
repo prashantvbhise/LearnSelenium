@@ -1,11 +1,12 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import commonPackage.WebDriverFactory;
+import common.WebDriverFactory;
 
 public class HomePage {
 
@@ -32,21 +33,27 @@ public class HomePage {
 	}
 
 	public AdminPage clickAdminLinks() {
-		adminLink.click();
+		
+		Actions act= new Actions(WebDriverFactory.getDriver());
+		act.moveToElement(adminLink).click().build().perform();
+		//act.moveToElement(adminLink).contextClick().build().perform();
+		//act.moveToElement(adminLink).clickAndHold().build().perform();
+				
+		//adminLink.click();
 		AdminPage ap = new AdminPage();
 		return ap;
 	}
 
-	public EmployeeList clickPimLinks() throws InterruptedException {
+	public EmployeeListPage clickPimLinks() throws InterruptedException {
 		Thread.sleep(1000);
 		pimLink.click();
-		EmployeeList el = new EmployeeList();
+		EmployeeListPage el = new EmployeeListPage();
 		return el;
 	}
 
-	public CandidateList clickRecruitmentLink() {
+	public CandidateListPage clickRecruitmentLink() {
 		recruitmentLink.click();
-		CandidateList cl = new CandidateList();
+		CandidateListPage cl = new CandidateListPage();
 		return cl;
 	}
 }

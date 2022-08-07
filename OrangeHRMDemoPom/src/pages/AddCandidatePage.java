@@ -1,13 +1,13 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import commonPackage.WebDriverFactory;
+import common.WebDriverFactory;
 
-public class AddCandidate {
+public class AddCandidatePage {
 
 	@FindBy(id = "addCandidate_firstName")
 	private WebElement firstName;
@@ -45,12 +45,12 @@ public class AddCandidate {
 	@FindBy(xpath = "//input[@type='button' and @value='Save']")
 	private WebElement saveButton;
 
-	public AddCandidate() {
+	public AddCandidatePage() {
 
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}
 
-	public CandidateList verifyAddingCandidate(String strFirstName, String strMiddleName, String strLastName,
+	public CandidateListPage verifyAddingCandidate(String strFirstName, String strMiddleName, String strLastName,
 			String strEmailId, String strContactNo, String strJobVaccancy, String strResumePath, String strKeyword,
 			String strAddComment) throws InterruptedException {
 		firstName.sendKeys(strFirstName);
@@ -69,7 +69,7 @@ public class AddCandidate {
 		addComment.sendKeys(strAddComment);
 		consentCheckbox.click();
 		saveButton.click();
-		CandidateList cl = new CandidateList();
+		CandidateListPage cl = new CandidateListPage();
 		return cl;
 
 	}

@@ -1,13 +1,13 @@
-package testPackage;
+package tests;
 
 import org.testng.annotations.Test;
 
-import commonPackage.BaseSelenium;
-import pageObjects.LoginPage;
+import common.BaseSelenium;
+import pages.LoginPage;
 
-public class VerifyAddingEmployeeScenarios extends BaseSelenium {
+public class AddEmployeeTest extends BaseSelenium {
 	
-	@Test
+	@Test (groups = {"Sanity", "Regression"})
 	public void addEmployeeWithLogin() throws InterruptedException {
 		
 		LoginPage lp= new LoginPage();		
@@ -21,7 +21,7 @@ public class VerifyAddingEmployeeScenarios extends BaseSelenium {
 		
 				
 	}
-	@Test
+	@Test (groups = {"Sanity"})
 	public void addEmployeeWithoutLogin() throws InterruptedException {
 		
 		LoginPage lp= new LoginPage();

@@ -1,13 +1,13 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import commonPackage.WebDriverFactory;
+import common.WebDriverFactory;
 
-public class AddEmployee {
+public class AddEmployeePage {
 
 	@FindBy(xpath = "//a[contains(text(),'Add Employee')]")
 	private WebElement addEmployeebtn;
@@ -45,7 +45,7 @@ public class AddEmployee {
 	@FindBy(xpath = "//input[@id='employeeId']")
 	private WebElement txtEmployeeId;
 
-	public AddEmployee() {
+	public AddEmployeePage() {
 
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}

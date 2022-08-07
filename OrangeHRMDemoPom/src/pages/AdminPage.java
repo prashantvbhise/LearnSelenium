@@ -1,10 +1,10 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import commonPackage.WebDriverFactory;
+import common.WebDriverFactory;
 
 public class AdminPage {
 
@@ -16,10 +16,10 @@ public class AdminPage {
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}
 
-	public AddUser clickonAddUserButton() {
+	public AddUserPage clickonAddUserButton() {
 
 		addUserButton.click();
-		AddUser au = new AddUser();
+		AddUserPage au = new AddUserPage();
 		return au;
 	}
 

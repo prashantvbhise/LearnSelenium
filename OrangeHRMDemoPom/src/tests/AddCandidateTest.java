@@ -1,12 +1,13 @@
-package testPackage;
+package tests;
 
 import org.testng.annotations.Test;
-import commonPackage.BaseSelenium;
-import pageObjects.LoginPage;
 
-public class VerifyAddingCandidateScenarios extends BaseSelenium{
+import common.BaseSelenium;
+import pages.LoginPage;
+
+public class AddCandidateTest extends BaseSelenium{
 	
-	@Test
+	@Test (groups = {"Sanity", "Regression"})
 	public void verifyAddingQACandidate() throws InterruptedException {
 		
 		LoginPage lp= new LoginPage();		
@@ -18,7 +19,7 @@ public class VerifyAddingCandidateScenarios extends BaseSelenium{
 							"C:\\Users\\Pooja\\Desktop\\Downloads\\resumetest.docx",
 							"Testing", "CandidateAddition");
 	}
-	@Test
+	@Test (groups = {"Sanity"})
 	public void verifyAddingSoftwareEngineerCandidate() throws InterruptedException {
 		
 		LoginPage lp= new LoginPage();
