@@ -1,11 +1,12 @@
 package tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import common.BaseSelenium;
+import common.IInvokedMethodListenerImpl;
 import pages.LoginPage;
 
-public class AddEmployeeTest extends BaseSelenium {
+@Listeners(IInvokedMethodListenerImpl.class)
+public class AddEmployeeTest  {
 	
 	@Test (groups = {"Sanity", "Regression"})
 	public void addEmployeeWithLogin() throws InterruptedException {

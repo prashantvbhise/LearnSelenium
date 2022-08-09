@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseSelenium {
 
-	@BeforeMethod (groups = {"Sanity", "Regression"})
+	//@BeforeMethod (groups = {"Sanity", "Regression"})
 	public void beforeEveryMethod() {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");

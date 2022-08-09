@@ -1,11 +1,14 @@
 package tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import common.BaseSelenium;
+import common.IInvokedMethodListenerImpl;
 import pages.LoginPage;
 
-public class AddUserTest extends BaseSelenium {
+@Listeners(IInvokedMethodListenerImpl.class)
+public class AddUserTest  {
 
 	@Test (groups = {"Sanity", "Regression"})
 	public void verifyAdduserEss() {
