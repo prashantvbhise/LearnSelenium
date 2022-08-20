@@ -23,13 +23,13 @@ public class AddUserPage {
 	private WebElement confirmPassword;
 	@FindBy(xpath = "//input[@type='button' and @value='Save']")
 	private WebElement saveButton;
-
+	
 	public AddUserPage() {
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}
 
 	public AdminPage verifyAddUserTest(String strUserTypeDropdown, String strEmpName, String strUserName,
-			String strUserStatus, String strPassword, String strConfirmPassword) {
+			String strUserStatus, String strPassword, String strConfirmPassword) throws InterruptedException {
 		Select userRole = new Select(userTypeDropdown);
 		userRole.selectByVisibleText(strUserTypeDropdown);
 		empName.sendKeys(strEmpName);
@@ -38,10 +38,12 @@ public class AddUserPage {
 		status.selectByVisibleText(strUserStatus);
 		password.sendKeys(strPassword);
 		confirmPassword.sendKeys(strConfirmPassword);
+		Thread.sleep(1000);
 		saveButton.click();
 		AdminPage ap = new AdminPage();
 		return ap;
 
 	}
+	
 
 }

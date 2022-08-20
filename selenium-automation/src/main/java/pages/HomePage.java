@@ -10,7 +10,7 @@ import common.WebDriverFactory;
 
 public class HomePage {
 
-	@FindBy(id = "welcome")
+	@FindBy(xpath = "//p[@class='oxd-userdropdown-name']")
 	private WebElement welcomeMsg;
 
 	@FindBy(id = "menu_admin_viewAdminModule")
@@ -27,8 +27,8 @@ public class HomePage {
 		PageFactory.initElements(WebDriverFactory.getDriver(), this);
 	}
 
-	public HomePage verifyWelcomeMsg() {
-		Assert.assertEquals(welcomeMsg.getText(), "Welcome Paul");
+	public HomePage verifyWelcomeMsg(String welcomeText) {
+		Assert.assertEquals(welcomeMsg.getText(), welcomeText);
 		return this;
 	}
 

@@ -6,18 +6,20 @@ import org.testng.IInvokedMethodListener;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 
+
 public class IInvokedMethodListenerImpl implements IInvokedMethodListener{
 
-	@Override
-	public void afterInvocation(IInvokedMethod method, ITestResult testResult, ITestContext context) {
-		// TODO Auto-generated method stub
-		//IInvokedMethodListener.super.afterInvocation(method, testResult, context);
-		System.out.println("***********afterInvocation***********");
-		
-		WebDriverFactory.getDriver().quit();
-	}
+	
+	
+	public void afterInvocation(IInvokedMethod method, ITestResult
+	  testResult, ITestContext context) { // TODO Auto-generated method stub
+	  //IInvokedMethodListener.super.afterInvocation(method, testResult, context);
+	  System.out.println("***********afterInvocation***********");
+	  
+	  WebDriverFactory.getDriver().quit(); }
+	 
 
-	@Override
+
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult, ITestContext context) {
 		// TODO Auto-generated method stub
 		//IInvokedMethodListener.super.beforeInvocation(method, testResult, context);
@@ -30,7 +32,14 @@ public class IInvokedMethodListenerImpl implements IInvokedMethodListener{
 
 		WebDriverFactory.getDriver().manage().window().maximize();
 
-		WebDriverFactory.getDriver().get("https://opensource-demo.orangehrmlive.com/");
+		WebDriverFactory.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

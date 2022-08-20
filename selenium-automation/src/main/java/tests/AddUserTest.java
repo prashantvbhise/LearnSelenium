@@ -11,16 +11,20 @@ import pages.LoginPage;
 public class AddUserTest  {
 
 	@Test (groups = {"Sanity", "Regression"})
-	public void verifyAdduserEss() {
+	public void verifyAdduserEss() throws InterruptedException {
 
 		LoginPage lp = new LoginPage();
 
-		lp.successfulLogin("admin", "admin123").clickAdminLinks().clickonAddUserButton().verifyAddUserTest("ESS",
-				"Nina Patel", "Ninapatel123", "Enabled", "Ninapatel123", "Ninapatel123");
+		lp.successfulLogin("admin", "admin123")
+			.clickAdminLinks()
+				.clickonAddUserButton()
+					.verifyAddUserTest("ESS","Nina Patel", "Karinapatel21",
+							"Enabled", "Ninapatel123", "Ninapatel123")
+						.verifyAddedUserPresentOrNot("Tinapatel1", "Karinapatel21");
 	}
 
 	//@Test (groups = {"Sanity"})
-	public void verifyAdduserAdmin() {
+	public void verifyAdduserAdmin() throws InterruptedException {
 
 		LoginPage lp = new LoginPage();
 

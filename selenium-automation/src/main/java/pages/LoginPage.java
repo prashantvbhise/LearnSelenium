@@ -9,19 +9,19 @@ import common.WebDriverFactory;
 
 public class LoginPage {
 
-	@FindBy(id = "txtUsername")
+	@FindBy(name = "username")
 	private WebElement username;
 
-	@FindBy(id = "txtPassword")
+	@FindBy(name = "password")
 	private WebElement password;
 
-	@FindBy(id = "btnLogin")
+	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement loginButton;
 
-	@FindBy(id = "spanMessage")
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
 	private WebElement errorMsg;
 	
-	@FindBy(xpath = "//a[text()='Forgot your password?']")
+	@FindBy(xpath = "//div[@class='orangehrm-login-forgot']")
 	private WebElement forgotPasswodLink;
 
 	public LoginPage() {

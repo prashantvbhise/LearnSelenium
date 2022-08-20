@@ -11,8 +11,13 @@
   File myFile= new File("C:\\Users\\Pooja\\Desktop\\Downloads\\TestFile.txt");
   
   try (Scanner myScanner = new Scanner(myFile)) { myScanner.hasNextLine();
-  if(myScanner.hasNextLine()==true) { System.out.println(myScanner.nextLine());
-  } } catch (FileNotFoundException e) { // TODO Auto-generated catch block
+  if(myScanner.hasNextLine()==true) { 
+	  
+	  System.out.println(myScanner.nextLine());
+  } 
+  } catch (FileNotFoundException e) 
+  
+  { // TODO Auto-generated catch block
   e.printStackTrace(); }
   
   
