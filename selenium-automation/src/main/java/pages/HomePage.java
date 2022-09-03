@@ -13,13 +13,13 @@ public class HomePage {
 	@FindBy(xpath = "//p[@class='oxd-userdropdown-name']")
 	private WebElement welcomeMsg;
 
-	@FindBy(id = "menu_admin_viewAdminModule")
+	@FindBy(xpath = "//span[text()='Admin']")
 	private WebElement adminLink;
 
-	@FindBy(id = "menu_pim_viewPimModule")
+	@FindBy(xpath = "//span[text()='PIM']")
 	private WebElement pimLink;
 
-	@FindBy(id = "menu_recruitment_viewRecruitmentModule")
+	@FindBy(xpath = "//span[text()='Recruitment']")
 	private WebElement recruitmentLink;
 
 	public HomePage() {
